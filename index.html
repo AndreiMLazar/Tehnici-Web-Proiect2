@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formular Dinamic</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"> </head>
+
+<body>
+    <div id="add-labels">
+        <label for="label-name">Nume eticheta:</label>
+        <input type="text" name="labelName" id="labelName" value="Eticheta">
+        <br>
+        <input type="submit" id="add-labels-submit" value="Adauga" onclick="addInput();"> 
+        <input type="submit" id="delete-labels-submit" value="Sterge" onclick="deleteInput();"> </div>
+    <form id="main-form" onSubmit="return false;">
+        <label for="name" style="margin-top: -15px;">Nume:</label>
+        <input type="text" name="name">
+        <br>
+        <label for="mail" style="margin-top: -15px;">E-mail:</label>
+        <input type="text" name="email" style=" margin-bottom: -30px;">
+        <br>
+        <button type="submit" id="submit" value="Trimite" onclick="loadText()">Incarca</button> </form>
+    <script type="text/javascript" src="js/javascript.js"></script>
+</body>
+
+</html>
